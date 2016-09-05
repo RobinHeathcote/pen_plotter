@@ -1,0 +1,2 @@
+class DateOfMove < ApplicationRecord
+end
