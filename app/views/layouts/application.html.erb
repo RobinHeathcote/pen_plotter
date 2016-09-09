@@ -8,7 +8,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+
   <body>
+    <%= link_to "Enter a new move date", new_move_date_path  %>
     <%= yield %>
   </body>
 </html>

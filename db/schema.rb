@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160902150257) do
+ActiveRecord::Schema.define(version: 20160909134224) do
 
-  create_table "date_of_moves", force: :cascade do |t|
+  create_table "move_dates", force: :cascade do |t|
+    t.string   "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "movedates", force: :cascade do |t|
     t.string   "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

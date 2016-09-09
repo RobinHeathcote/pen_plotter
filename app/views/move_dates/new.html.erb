@@ -1,0 +1,11 @@
+<h4> Enter a date when the pens were moved </h4>
+<%= form_for @date do |d| %>
+<p>
+  <%= d.label :date %><br>
+  <%= d.text_field :date %>
+</p>
+
+<p>
+  <%= d.submit %>
+</p>
+<% end %>
